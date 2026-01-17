@@ -7,57 +7,75 @@
   <title>Workshop Registration</title>
   <meta name="description" content="Register for a free, in-person workshop." />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Accessibility: allow keyboard users to skip repetitive content -->
-  <a href="#main" class="skip-link">Skip to main content</a>
 
   <header>
     <!-- Organization name or branding -->
-    <p>Community Career Center</p>
+    <p>Community Involvement Corps</p>
   </header>
 
   <main id="main">
-    <section>
-      <h1>Intro to YOUR_WORKSHOP_NAME</h1>
+    <section class="bubble">
+        <div class="bubble-grid">
+            <div>
+                <h1>Intro to computer use and technical literacy</h1>
 
-      <p>
-        Add a description for your workshop here.
-      </p>
+                <p>
+                    A free workshop for anyone that wants to improve their technical literacy.
+                </p>
 
-      <!-- Key details -->
-      <p>Data & Time</p>
-      <p>Modality</p>
-      <p>Price</p>
+                <!-- Key details -->
+                <ul class="details">
+                    <li><strong>Date:</strong> January 29, 2026</li>
+                    <li><strong>Time:</strong> 12:00pm to 1:00pm</li>
+                    <li><strong>Location:</strong> In-person (location details provided after registration)</li>
+                    <li><strong>Cost:</strong> Free</li>
+                </ul>
 
-      <!-- Primary action: exactly one -->
-      <a href="#register">Register</a>
+                <!-- Primary action: exactly one -->
+                <a href="#register" class="bigbuttonlol">Click me to register!</a>
+            </div>
+
+            <div class="bubble-right">
+                <h2>Who is this for?</h2>
+                <p>
+                Anyone that struggles with basic computer functions or would like to learn about computer repair.
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Supporting information -->
-    <section>
+    <section class="soft-section">
       <h2>What you’ll get</h2>
       <ul>
-        <li>Some outcome</li>
-        <li>Another outcome</li>
-        <li>And another outcome</li>
-      </ul>
+        <li>Improved understanding of operating system and settings</li>
+        <li>Basic troubleshooting steps that everyone should know</li>
+        <li>Live demonstration of common computer tasks</li>
+      </ul> 
     </section>
 
     <!-- Registration -->
-    <section id="register">
+    <section id="register" class ="soft-section">
       <h2>Register</h2>
 
       <form action="#" method="post">
-
-        <button type="submit"></button>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+        <button type="submit">Submit Registration!</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>Don't forget about footer content!</p>
+    <h2>
+      Contact Us
+    </h2>
+    <a href="mailto:helpmeIT@gmail.com">helpmeIT@gmail.com</a>
   </footer>
 </body>
 </html>
